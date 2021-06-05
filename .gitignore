@@ -3,4 +3,4 @@ venv/
 __pycache__/
 test_photos/
 test_videos/
-weights/
+weights/yolov4.weights
