@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Face Swap result</title>
+</head>
+<body>
+    {% if file_type == 'image' %}
+        <img src="{{ url_for('static', filename='user-results/') }}{{result}}">
+    {% else %}
+        <video controls width="800" height="600">
+            <source src="{{ url_for('static', filename='user-results/') }}{{result}}" type='video/webm'>
+        </video>
+    {% endif %}
+
+</body>
+</html>
